@@ -1,0 +1,16 @@
+package com.example.busstationgfl.dtos.auth;
+
+import com.example.busstationgfl.entities.user.User;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class AuthenticationResponse {
+    private String token;
+    private User user;
+}
